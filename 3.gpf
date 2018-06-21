@@ -1,0 +1,18 @@
+npts 52 52 52                        # num.grid points in xyz
+gridfld rec_3vhd.maps.fld            # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C H HD N OA SA      # receptor atom types
+ligand_types A C NA OA N SA HD       # ligand atom types
+receptor rec_3vhd.pdbqt              # macromolecule
+gridcenter -12.037 -4.257 -8.866     # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map rec_3vhd.A.map                   # atom-specific affinity map
+map rec_3vhd.C.map                   # atom-specific affinity map
+map rec_3vhd.NA.map                  # atom-specific affinity map
+map rec_3vhd.OA.map                  # atom-specific affinity map
+map rec_3vhd.N.map                   # atom-specific affinity map
+map rec_3vhd.SA.map                  # atom-specific affinity map
+map rec_3vhd.HD.map                  # atom-specific affinity map
+elecmap rec_3vhd.e.map               # electrostatic potential map
+dsolvmap rec_3vhd.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant
